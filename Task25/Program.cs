@@ -8,8 +8,8 @@ int numberA = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите целое число B: ");
 int numberB = Convert.ToInt32(Console.ReadLine());
 
-int result = NumberDegree(numberA, numberB);
-Console.Write($"{numberA},{numberB} -> {result}");
+int numberDegree = NumberDegree(numberA, numberB);
+Console.Write($"{numberA},{numberB} -> {numberDegree}");
 
 if (numberB > 0)
 {
