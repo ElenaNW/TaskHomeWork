@@ -4,7 +4,10 @@
 
 int[] array = CreateArray(8);
 PrintArray(array);
-
+Console.Write(" -> ");
+Console.Write("[");
+PrintArray(array);
+Console.Write("]");
 
 int[] CreateArray(int size)
 {
@@ -29,34 +32,7 @@ void PrintArray(int[] arr)
         }
         else Console.Write(arr[i]);
     }
-    Console.Write(" -> ");
-    Console.Write("[");
-    for (int i = 0; i < arr.Length; i++)
-    {
-        Console.Write(arr[i]);
-        if (i < arr.Length - 1)
-        {
-            Console.Write(", ");
-        }
-    }
-    Console.Write("]");
 }
 
-/*
-void PrintArray(int[] arr)
-{
-  int count = arr.Length;
-  int i = 0;
-  Console.Write("[");
-  while(i < count)
-  {
-    Console.Write(arr[i]);
-    i++;
-    if (i < count)
-    {
-      Console.Write(", ");
-    }
-  }
-  Console.Write("]");
-} 
-*/
+    
+ 
