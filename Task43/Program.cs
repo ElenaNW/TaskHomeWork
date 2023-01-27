@@ -15,7 +15,7 @@ Console.WriteLine("Задайте значение k2:");
 double numberK2 = Convert.ToDouble(Console.ReadLine());
 
 double numberX = GetX(numberB1, numberK1, numberB2, numberK2);
-double numberY = GetY(numberX, numberB2, numberK2);
+double numberY = GetY( numberB2, numberK2, numberX);
 PointPrint(numberK2, numberK1, numberX, numberY);
 
 
@@ -27,7 +27,7 @@ double GetX(double b1, double k1, double b2, double k2)
 
 double GetY(double b2, double k2, double x)
 {
-    double y = numberK2 * numberX + numberB2;
+    double y = k2 * x + b2;
     return y;
 }
 
