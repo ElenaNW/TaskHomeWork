@@ -14,7 +14,7 @@ int columnsNumber = Convert.ToInt32(Console.ReadLine());
 
 int[,] array2D = CreateMatrixRndInt(3, 4, 1, 10);
 PrintMatrix(array2D);
-int findElement = FindElement(array2D);
+int findElement = FindElement(array2D, rowNumber, columnsNumber);
 Console.WriteLine(findElement);
 
 int[,] CreateMatrixRndInt(int rows, int columns, int min, int max)
@@ -44,14 +44,17 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-int FindElement(int[,] matrix)
+ int FindElement(int[,] matrix, int rowNum, int columnsNum)
 {
-    if (rowNumber < 0 || rowNumber > matrix.GetLength(0) ||
-    columnsNumber < 0 || columnsNumber > matrix.GetLength(1))
+    int i = rowNum-1;
+    int j = columnsNum-1;
+    if (rowNum < 0 || rowNum > matrix.GetLength(0) ||
+    columnsNum < 0 || columnsNum > matrix.GetLength(1))
     {
         Console.WriteLine($"{rowNumber}, {columnsNumber} -> Такого элемента в массиве нет");
     }
-    return matrix[rowNumber - 1, columnsNumber - 1];
+    return matrix[i, j];
 }
+
 
 
