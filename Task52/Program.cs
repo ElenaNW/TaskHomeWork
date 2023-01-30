@@ -41,7 +41,7 @@ void PrintMatrix(int[,] matrix)
 
 double[] ArithmeticMeanColumns(int[,] matrix)
 {
-    double[] array = new double[matrix.GetLength(1)];
+    double[] arr = new double[matrix.GetLength(1)];
     for (int j = 0; j < matrix.GetLength(1); j++)
     {
         double sum = 0;
@@ -49,10 +49,10 @@ double[] ArithmeticMeanColumns(int[,] matrix)
         {
             sum += matrix[i, j];
             double mean = sum / matrix.GetLength(0);
-            array[j] = Math.Round(mean, 2);
+            arr[j] = Math.Round(mean, 2);
         }
     }
-    return array;
+    return arr;
 }
 
 void PrintArray(double[] arr)
