@@ -7,10 +7,10 @@
 // 18 20
 // 15 18
 
-int[,] arrayFirst2D = CreateMatrixRndInt(5, 2, 0, 5);
+int[,] arrayFirst2D = CreateMatrixRndInt(4, 3, 0, 5);
 PrintMatrix(arrayFirst2D);
 Console.WriteLine();
-int[,] arraySecond2D = CreateMatrixRndInt(2, 3, 0, 5);
+int[,] arraySecond2D = CreateMatrixRndInt(2, 4, 0, 5);
 PrintMatrix(arraySecond2D);
 Console.WriteLine();
 int[,] resultMatrix = MultiplyMatrix(arrayFirst2D, arraySecond2D);
@@ -43,7 +43,6 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-
 int[,] MultiplyMatrix(int[,] matrix1, int[,] matrix2)
 {
     int[,] resMatrix = new int[matrix1.GetLength(0), matrix2.GetLength(1)];
@@ -61,14 +60,11 @@ int[,] MultiplyMatrix(int[,] matrix1, int[,] matrix2)
     return resMatrix;
 }
 
-
-
 bool PrintResult(int[,] matrix1, int[,] matrix2, int[,] resultMatrix)
 {
     if (matrix1.GetLength(1) != matrix2.GetLength(0)) return true;
     return false;
 }
-
 
 if (printResult)
 {
