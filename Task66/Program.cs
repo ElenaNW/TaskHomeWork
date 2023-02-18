@@ -23,8 +23,3 @@ int NaturalNumbersRange(int numM, int numN)
     if (numM > numN) return numM + NaturalNumbersRange(numM - 1, numN);
     return numM;
 }
-
-
-
-
-
