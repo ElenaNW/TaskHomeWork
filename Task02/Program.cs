@@ -12,7 +12,7 @@ else
     Console.Write($"max = {number2}");
 
 
-/* Pflfxf 66
+/* Задача 66
 int result = SumOfNaturalNumbers(numberM, numberN);
 if (IsNaturalNumbers(numberM, numberN)) Console.Write(result);
 else Console.WriteLine("Number's type error");
